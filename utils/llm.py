@@ -11,14 +11,14 @@ logger = logging.getLogger(__name__)
 # API ключ уже должен быть настроен в main.py
 # Выбираем модель. 'gemini-1.5-flash' - быстрая и недорогая модель
 # Если нужна более мощная, можно использовать 'gemini-1.5-pro'
-MODEL_NAME = "gemini-1.5-flash"
+MODEL_NAME = "gemini-2.0-flash"
 
 # Настройки генерации (можно настроить)
 generation_config = {
     "temperature": 0.7, # Контролирует случайность вывода
     "top_p": 1.0,
     "top_k": 32,
-    "max_output_tokens": 8192, # Максимальное количество токенов в ответе
+    "max_output_tokens": 161920, # Максимальное количество токенов в ответе
     # "response_mime_type": "application/json", # Если хотим строго JSON
 }
 
@@ -107,7 +107,7 @@ async def generate_search_queries(context: str, learnings: List[str], breadth: i
 async def summarize_and_find_directions(context: str, learnings: List[str], text_to_analyze: str) -> Dict[str, List[str]]:
     """Анализирует текст, извлекает выводы и направления в формате JSON."""
     # Ограничим размер текста, чтобы не превышать лимиты (очень грубое ограничение)
-    max_input_chars = 30000 # Примерный лимит, нужно смотреть актуальные для модели
+    max_input_chars = 100000 # Примерный лимит, нужно смотреть актуальные для модели
     if len(text_to_analyze) > max_input_chars:
         logger.warning(f"Текст для анализа ({len(text_to_analyze)} символов) слишком большой, обрезается до {max_input_chars}.")
         text_to_analyze = text_to_analyze[:max_input_chars]

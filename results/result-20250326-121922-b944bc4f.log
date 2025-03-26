@@ -1,0 +1,44 @@
+2025-03-26 12:19:22 - main - INFO - Получен запрос на исследование: query='Каковы основные преимущества ежедневного употребления пиццы?', depth=2, breadth=2
+2025-03-26 12:19:23 - utils.llm - INFO - Сгенерированные запросы из ответа Gemini: ['Влияние ежедневного потребления пиццы на здоровье сердца', 'Пищевая ценность пиццы: сравнение с другими блюдами быстрого питания']
+2025-03-26 12:19:23 - utils.search - INFO - Выполнение поиска по запросу: 'Влияние ежедневного потребления пиццы на здоровье сердца', желаемое кол-во результатов: 2
+2025-03-26 12:19:24 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-03-26 12:19:24 - utils.search - INFO - Поиск по 'Влияние ежедневного потребления пиццы на здоровье сердца' вернул 2 URL.
+2025-03-26 12:19:24 - utils.search - INFO - Выполнение поиска по запросу: 'Пищевая ценность пиццы: сравнение с другими блюдами быстрого питания', желаемое кол-во результатов: 2
+2025-03-26 12:19:26 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-03-26 12:19:26 - utils.search - INFO - Поиск по 'Пищевая ценность пиццы: сравнение с другими блюдами быстрого питания' вернул 2 URL.
+2025-03-26 12:19:26 - utils.scraper - INFO - Попытка скрапинга URL: https://perepolokh.ru/i/picca-kazdyi-den-i-zdorove-kak-castoe-potreblenie-mozet-povliyat-na-organizm/
+2025-03-26 12:19:26 - utils.scraper - INFO - Попытка скрапинга URL: https://treeofbonsai.ru/blog/picca-ezednevno-pocemu-ona-mozet-stat-opasnostyu-dlya-zdorovya-i-organizma/
+2025-03-26 12:19:26 - utils.scraper - INFO - Попытка скрапинга URL: https://foodstruct.com/ru/food/пицца
+2025-03-26 12:19:26 - utils.scraper - INFO - Попытка скрапинга URL: https://health-diet.ru/table_calorie_users/8598/
+2025-03-26 12:19:27 - httpx - INFO - HTTP Request: GET https://foodstruct.com/ru/food/%D0%BF%D0%B8%D1%86%D1%86%D0%B0 "HTTP/1.1 200 OK"
+2025-03-26 12:19:27 - httpx - INFO - HTTP Request: GET https://health-diet.ru/table_calorie_users/8598/ "HTTP/1.1 200 OK"
+2025-03-26 12:19:27 - utils.scraper - INFO - Успешно извлечено ~2698 символов с https://health-diet.ru/table_calorie_users/8598/
+2025-03-26 12:19:27 - utils.scraper - INFO - Успешно извлечено ~1207 символов с https://foodstruct.com/ru/food/пицца
+2025-03-26 12:19:28 - httpx - INFO - HTTP Request: GET https://perepolokh.ru/i/picca-kazdyi-den-i-zdorove-kak-castoe-potreblenie-mozet-povliyat-na-organizm/ "HTTP/1.1 200 OK"
+2025-03-26 12:19:28 - utils.scraper - INFO - Успешно извлечено ~11718 символов с https://perepolokh.ru/i/picca-kazdyi-den-i-zdorove-kak-castoe-potreblenie-mozet-povliyat-na-organizm/
+2025-03-26 12:19:28 - httpx - INFO - HTTP Request: GET https://treeofbonsai.ru/blog/picca-ezednevno-pocemu-ona-mozet-stat-opasnostyu-dlya-zdorovya-i-organizma/ "HTTP/1.1 200 OK"
+2025-03-26 12:19:28 - utils.scraper - INFO - Успешно извлечено ~7494 символов с https://treeofbonsai.ru/blog/picca-ezednevno-pocemu-ona-mozet-stat-opasnostyu-dlya-zdorovya-i-organizma/
+2025-03-26 12:19:31 - utils.llm - INFO - Успешно извлечены выводы: ['Ежедневное употребление пиццы может привести к набору веса, проблемам с сердечно-сосудистой системой, развитию диабета и проблемам с пищеварением.', 'Пицца часто содержит высокое количество соли, насыщенных жиров и обработанных углеводов.', 'Регулярное потребление пиццы может вызвать дефицит витаминов и минералов.', 'Для снижения негативного воздействия пиццы рекомендуется ограничить ее потребление, выбирать варианты с нежирными начинками и добавлять больше овощей.'], направления: ['Каково влияние разных типов пиццы (например, домашней vs. из пиццерии) на здоровье?', 'Как частота потребления пиццы коррелирует с развитием конкретных заболеваний?', 'Какие конкретные витамины и минералы чаще всего дефицитны при регулярном употреблении пиццы?', 'Какие альтернативы пицце могут обеспечить аналогичное удовлетворение вкусовых предпочтений, сохраняя при этом полезность для здоровья?']
+2025-03-26 12:19:32 - utils.llm - INFO - Сгенерированные запросы из ответа Gemini: ['Влияние ежедневного потребления пиццы на микробиоту кишечника', 'Корреляция между потреблением пиццы и уровнем холестерина в крови']
+2025-03-26 12:19:32 - utils.search - INFO - Выполнение поиска по запросу: 'Влияние ежедневного потребления пиццы на микробиоту кишечника', желаемое кол-во результатов: 2
+2025-03-26 12:19:33 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-03-26 12:19:33 - utils.search - INFO - Поиск по 'Влияние ежедневного потребления пиццы на микробиоту кишечника' вернул 2 URL.
+2025-03-26 12:19:33 - utils.search - INFO - Выполнение поиска по запросу: 'Корреляция между потреблением пиццы и уровнем холестерина в крови', желаемое кол-во результатов: 2
+2025-03-26 12:19:35 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-03-26 12:19:35 - utils.search - INFO - Поиск по 'Корреляция между потреблением пиццы и уровнем холестерина в крови' вернул 2 URL.
+2025-03-26 12:19:35 - utils.scraper - INFO - Попытка скрапинга URL: https://cgon.rospotrebnadzor.ru/naseleniyu/zdorovyy-obraz-zhizni/vliyanie-pitaniya-na-mikrobiotu-kishechnika/
+2025-03-26 12:19:35 - utils.scraper - INFO - Попытка скрапинга URL: https://www.pravda.ru/news/health/2189012-gut-microbiota-diet/
+2025-03-26 12:19:35 - utils.scraper - INFO - Попытка скрапинга URL: https://meduniver.com/Medical/cardiologia/385.html
+2025-03-26 12:19:35 - utils.scraper - INFO - Попытка скрапинга URL: https://mamatov.com/heart/mozhno-li-est-piczczu-pri-vysokom-urovne-holesterina/
+2025-03-26 12:19:35 - httpx - INFO - HTTP Request: GET https://www.pravda.ru/news/health/2189012-gut-microbiota-diet/ "HTTP/1.1 403 Forbidden"
+2025-03-26 12:19:35 - utils.scraper - ERROR - HTTP ошибка 403 при доступе к https://www.pravda.ru/news/health/2189012-gut-microbiota-diet/: Client error '403 Forbidden' for url 'https://www.pravda.ru/news/health/2189012-gut-microbiota-diet/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+2025-03-26 12:19:35 - httpx - INFO - HTTP Request: GET https://cgon.rospotrebnadzor.ru/naseleniyu/zdorovyy-obraz-zhizni/vliyanie-pitaniya-na-mikrobiotu-kishechnika/ "HTTP/1.1 200 OK"
+2025-03-26 12:19:35 - utils.scraper - INFO - Успешно извлечено ~5903 символов с https://cgon.rospotrebnadzor.ru/naseleniyu/zdorovyy-obraz-zhizni/vliyanie-pitaniya-na-mikrobiotu-kishechnika/
+2025-03-26 12:19:36 - httpx - INFO - HTTP Request: GET https://mamatov.com/heart/mozhno-li-est-piczczu-pri-vysokom-urovne-holesterina/ "HTTP/1.1 200 OK"
+2025-03-26 12:19:36 - utils.scraper - WARNING - Не удалось извлечь текст со страницы https://mamatov.com/heart/mozhno-li-est-piczczu-pri-vysokom-urovne-holesterina/ после парсинга.
+2025-03-26 12:19:36 - httpx - INFO - HTTP Request: GET https://meduniver.com/Medical/cardiologia/385.html "HTTP/1.1 200 OK"
+2025-03-26 12:19:36 - utils.scraper - INFO - Успешно извлечено ~4152 символов с https://meduniver.com/Medical/cardiologia/385.html
+2025-03-26 12:19:38 - utils.llm - INFO - Успешно извлечены выводы: ['Пробиотики, содержащиеся в ферментированных продуктах (йогурт, квашеная капуста, темпе, кимчи, мисо, комбуча, соленые огурцы, пахта, некоторые сыры), положительно влияют на микробиоту кишечника, способствуя улучшению пищеварения и иммунитета.', 'Употребление алкоголя может повысить уровень триглицеридов и мочевой кислоты в крови, а также негативно повлиять на сердечно-сосудистую систему.'], направления: ['Как влияет регулярное употребление пиццы с различными начинками на состав микробиоты кишечника?', 'Можно ли использовать пробиотические продукты для минимизации негативного влияния пиццы на здоровье?', 'Какова оптимальная комбинация пробиотических продуктов и пиццы для баланса пользы и вреда?', 'Существуют ли исследования, изучающие взаимосвязь между потреблением пиццы и алкоголя и их влиянием на биохимические показатели крови?']
+2025-03-26 12:19:42 - main - ERROR - Ошибка при генерации итогового отчета: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-26 12:19:42 - main - INFO - Исследование для запроса 'Каковы основные преимущества ежедневного употребления пиццы?' успешно завершено.

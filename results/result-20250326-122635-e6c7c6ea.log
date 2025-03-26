@@ -1,0 +1,35 @@
+2025-03-26 12:26:35 - main - INFO - Получен запрос на исследование: query='Каковы основные преимущества ежедневного употребления шавермы?', depth=2, breadth=2
+2025-03-26 12:26:37 - utils.llm - INFO - Сгенерированные запросы из ответа Gemini: ['Пищевая ценность шавермы: сравнение с другими блюдами быстрого питания', 'Воздействие ежедневного потребления шавермы на здоровье: долгосрочные исследования']
+2025-03-26 12:26:37 - utils.search - INFO - Выполнение поиска по запросу: 'Пищевая ценность шавермы: сравнение с другими блюдами быстрого питания', желаемое кол-во результатов: 2
+2025-03-26 12:26:38 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-03-26 12:26:38 - utils.search - INFO - Поиск по 'Пищевая ценность шавермы: сравнение с другими блюдами быстрого питания' вернул 2 URL.
+2025-03-26 12:26:38 - utils.search - INFO - Выполнение поиска по запросу: 'Воздействие ежедневного потребления шавермы на здоровье: долгосрочные исследования', желаемое кол-во результатов: 2
+2025-03-26 12:26:39 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-03-26 12:26:39 - utils.search - INFO - Поиск по 'Воздействие ежедневного потребления шавермы на здоровье: долгосрочные исследования' вернул 2 URL.
+2025-03-26 12:26:39 - utils.scraper - INFO - Попытка скрапинга URL: https://profi-velo.ru/info/skolko-kalorii-soderzitsya-v-saverme-s-kuricei-izucaem-sostav-i-pishhevuyu-cennost-populyarnogo-blyuda/
+2025-03-26 12:26:39 - utils.scraper - INFO - Попытка скрапинга URL: https://health-diet.ru/table_calorie_users/3538741/
+2025-03-26 12:26:39 - utils.scraper - INFO - Попытка скрапинга URL: https://tvspb.ru/news/2025/01/15/vrach-preduprezhdaet-ob-opasnostyah-shavermy
+2025-03-26 12:26:39 - utils.scraper - INFO - Попытка скрапинга URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC9762455/
+2025-03-26 12:26:40 - httpx - INFO - HTTP Request: GET https://profi-velo.ru/info/skolko-kalorii-soderzitsya-v-saverme-s-kuricei-izucaem-sostav-i-pishhevuyu-cennost-populyarnogo-blyuda/ "HTTP/1.1 502 Bad Gateway"
+2025-03-26 12:26:40 - utils.scraper - ERROR - HTTP ошибка 502 при доступе к https://profi-velo.ru/info/skolko-kalorii-soderzitsya-v-saverme-s-kuricei-izucaem-sostav-i-pishhevuyu-cennost-populyarnogo-blyuda/: Server error '502 Bad Gateway' for url 'https://profi-velo.ru/info/skolko-kalorii-soderzitsya-v-saverme-s-kuricei-izucaem-sostav-i-pishhevuyu-cennost-populyarnogo-blyuda/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2025-03-26 12:26:40 - httpx - INFO - HTTP Request: GET https://health-diet.ru/table_calorie_users/3538741/ "HTTP/1.1 200 OK"
+2025-03-26 12:26:40 - httpx - INFO - HTTP Request: GET https://pmc.ncbi.nlm.nih.gov/articles/PMC9762455/ "HTTP/1.1 200 OK"
+2025-03-26 12:26:40 - utils.scraper - INFO - Успешно извлечено ~2760 символов с https://health-diet.ru/table_calorie_users/3538741/
+2025-03-26 12:26:40 - httpx - INFO - HTTP Request: GET https://tvspb.ru/news/2025/01/15/vrach-preduprezhdaet-ob-opasnostyah-shavermy "HTTP/1.1 200 OK"
+2025-03-26 12:26:40 - utils.scraper - INFO - Успешно извлечено ~82119 символов с https://pmc.ncbi.nlm.nih.gov/articles/PMC9762455/
+2025-03-26 12:26:40 - utils.scraper - INFO - Успешно извлечено ~1578 символов с https://tvspb.ru/news/2025/01/15/vrach-preduprezhdaet-ob-opasnostyah-shavermy
+2025-03-26 12:26:40 - utils.llm - WARNING - Текст для анализа (86471 символов) слишком большой, обрезается до 30000.
+2025-03-26 12:26:42 - utils.llm - INFO - Успешно извлечены выводы: ['Ежедневное употребление шавермы может представлять серьезную угрозу здоровью из-за риска инфекционных заболеваний, вызванных некачественными продуктами и нарушением санитарных норм.', 'В некоторых случаях употребление шавермы может привести к летальному исходу, особенно у людей с сердечно-сосудистыми заболеваниями.', 'Шаверма содержит приблизительно 800 кКал.'], направления: ['Какие конкретные санитарные нормы чаще всего нарушаются при приготовлении шавермы и как это влияет на риск инфекций?', 'Какова корреляция между качеством ингредиентов, условиями хранения и приготовления шавермы и вероятностью развития инфекционных заболеваний?', 'Необходимы ли дополнительные исследования для определения точной калорийности шавермы с учетом различных рецептов и ингредиентов?', 'Каковы долгосрочные последствия употребления шавермы для здоровья, с учетом риска инфекций и высокой калорийности?']
+2025-03-26 12:26:43 - utils.llm - INFO - Сгенерированные запросы из ответа Gemini: ['"Влияние ежедневного потребления шавермы на уровень холестерина"', '"Статистика пищевых отравлений, связанных с употреблением шавермы"']
+2025-03-26 12:26:43 - utils.search - INFO - Выполнение поиска по запросу: '"Влияние ежедневного потребления шавермы на уровень холестерина"', желаемое кол-во результатов: 2
+2025-03-26 12:26:44 - primp - INFO - response: https://html.duckduckgo.com/html 200
+2025-03-26 12:26:44 - utils.search - INFO - Поиск по '"Влияние ежедневного потребления шавермы на уровень холестерина"' вернул 0 URL.
+2025-03-26 12:26:44 - utils.search - INFO - Выполнение поиска по запросу: '"Статистика пищевых отравлений, связанных с употреблением шавермы"', желаемое кол-во результатов: 2
+2025-03-26 12:26:46 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-03-26 12:26:46 - utils.search - INFO - Поиск по '"Статистика пищевых отравлений, связанных с употреблением шавермы"' вернул 1 URL.
+2025-03-26 12:26:46 - utils.scraper - INFO - Попытка скрапинга URL: http://www.google.ru/search?hl=ru&q="Статистика+пищевых+отравлений,+связанных+с+употреблением+шавермы"
+2025-03-26 12:26:46 - httpx - INFO - HTTP Request: GET http://www.google.ru/search?hl=ru&q=%22%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%B8%D1%89%D0%B5%D0%B2%D1%8B%D1%85+%D0%BE%D1%82%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9,+%D1%81%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D1%85+%D1%81+%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC+%D1%88%D0%B0%D0%B2%D0%B5%D1%80%D0%BC%D1%8B%22 "HTTP/1.1 302 Found"
+2025-03-26 12:26:46 - httpx - INFO - HTTP Request: GET https://www.google.ru/search?hl=ru&q=%22%D0%A1%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BF%D0%B8%D1%89%D0%B5%D0%B2%D1%8B%D1%85+%D0%BE%D1%82%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9,+%D1%81%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D1%85+%D1%81+%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC+%D1%88%D0%B0%D0%B2%D0%B5%D1%80%D0%BC%D1%8B%22&gws_rd=ssl "HTTP/1.1 200 OK"
+2025-03-26 12:26:46 - utils.scraper - WARNING - Не удалось извлечь текст со страницы http://www.google.ru/search?hl=ru&q="Статистика+пищевых+отравлений,+связанных+с+употреблением+шавермы" после парсинга.
+2025-03-26 12:27:15 - main - INFO - Исследование для запроса 'Каковы основные преимущества ежедневного употребления шавермы?' успешно завершено.

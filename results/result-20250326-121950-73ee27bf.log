@@ -1,0 +1,44 @@
+2025-03-26 12:19:50 - main - INFO - Получен запрос на исследование: query='Каковы основные преимущества ежедневного употребления пиццы?', depth=2, breadth=2
+2025-03-26 12:19:51 - utils.llm - INFO - Сгенерированные запросы из ответа Gemini: ['Влияние ежедневного потребления пиццы на здоровье сердца', 'Пищевая ценность пиццы: витамины и минералы']
+2025-03-26 12:19:51 - utils.search - INFO - Выполнение поиска по запросу: 'Влияние ежедневного потребления пиццы на здоровье сердца', желаемое кол-во результатов: 2
+2025-03-26 12:19:52 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-03-26 12:19:52 - utils.search - INFO - Поиск по 'Влияние ежедневного потребления пиццы на здоровье сердца' вернул 2 URL.
+2025-03-26 12:19:52 - utils.search - INFO - Выполнение поиска по запросу: 'Пищевая ценность пиццы: витамины и минералы', желаемое кол-во результатов: 2
+2025-03-26 12:19:53 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-03-26 12:19:53 - utils.search - INFO - Поиск по 'Пищевая ценность пиццы: витамины и минералы' вернул 2 URL.
+2025-03-26 12:19:53 - utils.scraper - INFO - Попытка скрапинга URL: https://perepolokh.ru/i/picca-kazdyi-den-i-zdorove-kak-castoe-potreblenie-mozet-povliyat-na-organizm/
+2025-03-26 12:19:53 - utils.scraper - INFO - Попытка скрапинга URL: https://treeofbonsai.ru/blog/picca-ezednevno-pocemu-ona-mozet-stat-opasnostyu-dlya-zdorovya-i-organizma/
+2025-03-26 12:19:53 - utils.scraper - INFO - Попытка скрапинга URL: https://foodstruct.com/ru/food/пицца
+2025-03-26 12:19:53 - utils.scraper - INFO - Попытка скрапинга URL: https://health-diet.ru/table_calorie_users/592266/
+2025-03-26 12:19:54 - httpx - INFO - HTTP Request: GET https://treeofbonsai.ru/blog/picca-ezednevno-pocemu-ona-mozet-stat-opasnostyu-dlya-zdorovya-i-organizma/ "HTTP/1.1 200 OK"
+2025-03-26 12:19:54 - httpx - INFO - HTTP Request: GET https://perepolokh.ru/i/picca-kazdyi-den-i-zdorove-kak-castoe-potreblenie-mozet-povliyat-na-organizm/ "HTTP/1.1 200 OK"
+2025-03-26 12:19:54 - utils.scraper - INFO - Успешно извлечено ~7494 символов с https://treeofbonsai.ru/blog/picca-ezednevno-pocemu-ona-mozet-stat-opasnostyu-dlya-zdorovya-i-organizma/
+2025-03-26 12:19:54 - utils.scraper - INFO - Успешно извлечено ~11718 символов с https://perepolokh.ru/i/picca-kazdyi-den-i-zdorove-kak-castoe-potreblenie-mozet-povliyat-na-organizm/
+2025-03-26 12:19:54 - httpx - INFO - HTTP Request: GET https://health-diet.ru/table_calorie_users/592266/ "HTTP/1.1 200 OK"
+2025-03-26 12:19:54 - httpx - INFO - HTTP Request: GET https://foodstruct.com/ru/food/%D0%BF%D0%B8%D1%86%D1%86%D0%B0 "HTTP/1.1 200 OK"
+2025-03-26 12:19:54 - utils.scraper - INFO - Успешно извлечено ~6137 символов с https://health-diet.ru/table_calorie_users/592266/
+2025-03-26 12:19:54 - utils.scraper - INFO - Успешно извлечено ~1207 символов с https://foodstruct.com/ru/food/пицца
+2025-03-26 12:19:57 - utils.llm - INFO - Успешно извлечены выводы: ['Ежедневное употребление пиццы может привести к набору веса, проблемам с сердечно-сосудистой системой, развитию диабета и проблемам с пищеварением.', 'Пицца часто содержит высокое содержание соли, насыщенных жиров и обработанных углеводов, что негативно сказывается на здоровье.', 'Регулярное употребление пиццы может привести к дефициту витаминов и минералов.', 'Для снижения негативного влияния пиццы на здоровье рекомендуется ограничить ее потребление, выбирать варианты с нежирными начинками и добавлять больше овощей.'], направления: ['Каково оптимальное количество потребления пиццы в неделю для минимизации негативных последствий для здоровья?', 'Как соотносятся различные типы пиццы (домашняя, ресторанная, фастфуд) по содержанию вредных веществ и влиянию на организм?', 'Какие конкретные витамины и минералы наиболее часто страдают при регулярном потреблении пиццы, и как восполнить их дефицит?', 'Какие альтернативные рецепты пиццы с низким содержанием жиров, соли и улучшенным составом существуют?']
+2025-03-26 12:19:58 - utils.llm - INFO - Сгенерированные запросы из ответа Gemini: ['Влияние ежедневного потребления пиццы на микробиоту кишечника', 'Корреляция между потреблением пиццы и уровнем холестерина в крови']
+2025-03-26 12:19:58 - utils.search - INFO - Выполнение поиска по запросу: 'Влияние ежедневного потребления пиццы на микробиоту кишечника', желаемое кол-во результатов: 2
+2025-03-26 12:19:59 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-03-26 12:19:59 - utils.search - INFO - Поиск по 'Влияние ежедневного потребления пиццы на микробиоту кишечника' вернул 2 URL.
+2025-03-26 12:19:59 - utils.search - INFO - Выполнение поиска по запросу: 'Корреляция между потреблением пиццы и уровнем холестерина в крови', желаемое кол-во результатов: 2
+2025-03-26 12:20:00 - primp - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-03-26 12:20:00 - utils.search - INFO - Поиск по 'Корреляция между потреблением пиццы и уровнем холестерина в крови' вернул 2 URL.
+2025-03-26 12:20:00 - utils.scraper - INFO - Попытка скрапинга URL: https://propionix.ru/novosti/news_post/vliyanie-diety-na-mikrobiom-kishechnika-i-posledstviya-dlya-zdorovya-cheloveka
+2025-03-26 12:20:00 - utils.scraper - INFO - Попытка скрапинга URL: https://www.pravda.ru/news/health/2189012-gut-microbiota-diet/
+2025-03-26 12:20:00 - utils.scraper - INFO - Попытка скрапинга URL: https://meduniver.com/Medical/cardiologia/385.html
+2025-03-26 12:20:00 - utils.scraper - INFO - Попытка скрапинга URL: https://foldbrand.ru/mass-index/dieta-pri-povyshennom-indekse-aterogennosti.html
+2025-03-26 12:20:01 - httpx - INFO - HTTP Request: GET https://www.pravda.ru/news/health/2189012-gut-microbiota-diet/ "HTTP/1.1 403 Forbidden"
+2025-03-26 12:20:01 - utils.scraper - ERROR - HTTP ошибка 403 при доступе к https://www.pravda.ru/news/health/2189012-gut-microbiota-diet/: Client error '403 Forbidden' for url 'https://www.pravda.ru/news/health/2189012-gut-microbiota-diet/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+2025-03-26 12:20:01 - httpx - INFO - HTTP Request: GET https://meduniver.com/Medical/cardiologia/385.html "HTTP/1.1 200 OK"
+2025-03-26 12:20:01 - utils.scraper - INFO - Успешно извлечено ~4152 символов с https://meduniver.com/Medical/cardiologia/385.html
+2025-03-26 12:20:01 - httpx - INFO - HTTP Request: GET https://propionix.ru/novosti/news_post/vliyanie-diety-na-mikrobiom-kishechnika-i-posledstviya-dlya-zdorovya-cheloveka "HTTP/1.1 200 OK"
+2025-03-26 12:20:02 - utils.scraper - INFO - Успешно извлечено ~98160 символов с https://propionix.ru/novosti/news_post/vliyanie-diety-na-mikrobiom-kishechnika-i-posledstviya-dlya-zdorovya-cheloveka
+2025-03-26 12:20:16 - utils.scraper - ERROR - Ошибка запроса к https://foldbrand.ru/mass-index/dieta-pri-povyshennom-indekse-aterogennosti.html: 
+2025-03-26 12:20:16 - utils.llm - WARNING - Текст для анализа (102319 символов) слишком большой, обрезается до 30000.
+2025-03-26 12:20:19 - utils.llm - INFO - Успешно извлечены выводы: ['Различные компоненты диеты (белки, жиры, углеводы) вызывают предсказуемые изменения в составе микробиоты кишечника в течение 24 часов.', 'Состав микробиоты кишечника связан с различными заболеваниями, включая воспалительные заболевания кишечника, ожирение, диабет 2 типа и атеросклероз.', 'Потребление пребиотиков (неперевариваемые углеводы) увеличивает количество бифидобактерий и молочнокислых бактерий, что способствует улучшению здоровья.', 'Пробиотики, такие как ферментированные молочные продукты, увеличивают общую бактериальную нагрузку и количество полезных бактерий, таких как бифидобактерии и лактобациллы.', 'Потребление полифенолов увеличивает количество бифидобактерий и лактобацилл и снижает количество патогенных бактерий.'], направления: ['Как ежедневное потребление пиццы влияет на состав и разнообразие микробиоты кишечника?', 'Какие конкретные штаммы бактерий в микробиоме кишечника наиболее чувствительны к компонентам пиццы (например, жиры, углеводы, соль)?', 'Можно ли использовать знания о влиянии диеты на микробиом для разработки рекомендаций по здоровому питанию, которые минимизируют негативное влияние пиццы?', 'Есть ли корреляция между составом микробиоты кишечника и степенью негативного воздействия ежедневного потребления пиццы на здоровье?', 'Какие пробиотические или пребиотические добавки могут быть эффективны для смягчения негативного влияния ежедневного потребления пиццы на микробиом кишечника?']
+2025-03-26 12:20:24 - main - ERROR - Ошибка при генерации итогового отчета: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-03-26 12:20:24 - main - INFO - Исследование для запроса 'Каковы основные преимущества ежедневного употребления пиццы?' успешно завершено.

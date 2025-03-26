@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+google-generativeai
+duckduckgo-search
+httpx
+beautifulsoup4
+lxml
